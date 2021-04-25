@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #0F2027; 
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+    background: linear-gradient(45deg, #2C5364, #203A43, #0F2027); 
+
+}
+
+/*     Header Section       */
+
+.head_part{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(student.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container1{
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+.menu{
+    flex: 1;
+    text-align: right;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.menu ul li a{
+    font-weight: 1000;
+    padding-top: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #fff;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    background:#fff;
+}
+
+.menu ul li:hover::after {
+    left: 0%;
+    width: 100%;
+}
+
+.message{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.message h2{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.message h4{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.message p{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+.message button{
+    margin-top: 55px;
+    text-transform: uppercase;
+    width: 200px;
+    height: 40px;
+    background: #e73827;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+.message button:hover{
+    box-shadow: 0 0 8px 0 #e73827;
+}
+
+/*     About US Section       */
+
+.about_us{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(pic2.jpg);
+    color: #fff;
+}
+
+.about_us h2{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+}
+
+.intro{
+    padding: 35px;
+    font-size: 25px;
+}
+
+.part1{
+    padding: 35px;
+}
+
+.part1 h4{
+    font-size: 35px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.part1 p{
+    font-size: 25px;
+}
+
+.part2{
+    padding-top: 50px;
+    padding: 35px;
+}
+
+.part2 h4{
+    font-size: 35px;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.part2 p{
+    font-size: 25px;
+}
+
+/*     Department Section      */
+
+.department{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+}
+
+.department h2{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+}
+
+.row{
+    margin: 20px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.course-col{
+    width: 450px;
+    height: 700px;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0 #000;
+    background: #333333;  
+    background: -webkit-linear-gradient(to right, #dd1818, #333333); 
+    background: linear-gradient(45deg, #dd1818, #333333);
+} 
+
+.course-col h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 35px;
+    word-spacing: 10px;
+    text-decoration: underline;
+}
+
+.course-col p{
+    padding-top: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 35px;
+    word-spacing: 15px;
+}
+
+.course-col img{
+    width: 300px;
+}
+
+.course-col button{
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.course-col button:hover{
+    box-shadow: 0 0 8px 0 #fff;
+}
+
+/*     Message Section       */
+
+.message_part{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(campus.jpg);
+}
+
+.message_part h2{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.principal_message{
+    padding: 25px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.principal_message img{
+    width: 500px;
+    box-shadow: 0 0 8px 0 #000;
+}
+
+.vice_principal_message{
+    padding: 25px;
+    display: flex;
+    padding: 25px;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
+.vice_principal_message img{
+    width: 500px;
+    box-shadow: 0 0 8px 0 #000;
+}
+
+.part3, .part6{
+    width: 800px;
+}
+
+.part3{
+    text-align: right;
+}
+
+.part4, .part5{
+    padding: 10px;
+    width: 900px;
+    box-shadow: 0 0 8px 0 #fff;
+    text-align: center;
+}
+
+.part4 h4{
+    font-size: 20px;
+}
+
+.part4 p{
+    padding: 30px;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+.part5 h4{
+    font-size: 20px;
+}
+
+.part5 p{
+    padding: 30px;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+/*     Facilities Section       */
+
+.facilities{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #000;  
+}
+
+.facilities h2{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 50px;
+    padding-bottom: 25px;;
+}
+
+.facilities h4{
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.part7{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+    height: 200px;
+}
+
+.part7-row{
+    color: #fff;
+    border-radius: 10px;
+    background: #EB5757;
+    background: -webkit-linear-gradient(to right, #000000, #EB5757);
+    background: linear-gradient(45deg, #000000, #EB5757);
+    padding: 20px;
+    height: 700px;
+    width: 550px;
+    text-align: center;
+    box-shadow: 0 0 8px 0 #0F2027;
+}
+
+.part7-row img{
+    width: 400px;
+    padding-top: 40px;
+}
+
+.part7-row h4{
+    font-size: 25px;
+}
+
+.part7-row p{
+    font-style: italic;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+/*     Notice Section       */
+
+.notice_part{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(lab.jpg);
+}
+
+.notice_row{
+    display: flex;
+    padding: 5px;
+}
+
+.notice_col{
+    border-radius: 10px;
+    padding: 20px;
+    height: 800px;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 0 8px 0 #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.notice_col h4{
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.part10{
+    padding-top: 55px;
+}
+
+.part10 p{
+    padding: 15px;
+    font-weight: 900;
+}
+
+.part10 a{
+    margin: 10px;
+    text-decoration: underline;
+    color: #fff;
+    padding: 15px;
+    font-weight: 900;
+}
+
+.part10 a:hover{
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 #fff;
+}
+
+/*     Footer       */
+
+.footer{
+    height: 700px;
+    width: 100%;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000;
+}
+
+.footer_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    margin: 10px;
+    height: 200px;
+    font-size: 20px;
+    padding-top: 50px;
+    padding: 15px;
+}
+
+.footer_row h4{
+    text-decoration: underline;
+}
+
+.footer_col1 img{
+    width: 250px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer_col1{
+    width: 500px;
+    padding: 25px;
+    height: 600px;
+}
+
+.footer_col1 p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer_col1 ul li{
+    width: 50px;
+    height: 50px;
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    box-shadow: 0 0 8px 0 #000;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.footer_col1 ul{
+    padding-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_col1 i{
+    padding: 15px 17px;
+    color: #000;
+}
+
+.footer_col2{
+    width: 500px;
+    padding: 40px;
+    text-align: left;
+    height: 500px;
+    justify-content: center;
+}
+
+.footer_col3{
+    width: 500px;
+    padding: 40px;
+    text-align: left;
+    height: 500px;
+}
+
+.footer_col4{
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    text-align: left;
+}
+
+.footer_col2 ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+.footer_col2 ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.footer_col2 ul li a:hover{
+    text-decoration: underline;
+}
+
+.text_bar{
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+}
+
+.text_bar:hover{
+    box-shadow: 0 0 8px 0 #fff;
+}
+
+.submit_btn{
+    text-transform: uppercase;
+    color: #fff;
+    background: #000;
+    border-radius: 5px;
+    margin: 10px;
+    width: 310px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+}
+
+.submit_btn:hover{
+    box-shadow: 0 0 8px 0 #000;
+}
+
+hr{
+    width:95%; 
+    margin: auto;
+}
+
+.copywrite{
+    width: 100%;
+    position: absolute;
+    padding-top: 370px;
+    text-align: center;
+}
+
+.copywrite p{
+    font-size: 20px;
+}
+
+.developer a{
+    color: red;
+    text-decoration: none;
+}
+
+.developer a:hover{
+    text-decoration: underline;
+}
